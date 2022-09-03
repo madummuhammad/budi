@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+        <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/css/owl.carousel.css">
+        <title>Buku Bacaan</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-center budi-navbar">
+            <div class="container px-5">
+                <a class="navbar-brand" href="homepage.html">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="homepage.html">Beranda</a>
+                        </li>
+                        <li class="nav-item px-3 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Buku
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="buku_bacaan.html">Buku Digital</a></li>
+                                <li><a class="dropdown-item" href="buku_komik.html">Buku Komik</a></li>
+                                <li><a class="dropdown-item" href="buku_audio.html">Buku Audio</a></li>
+                                <li><a class="dropdown-item" href="buku_video.html">Buku Video</a></li>
+                            </ul>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Pustakaku</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Referensi</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Kontak Kami</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="d-flex">
+                    <button class="btn text-blue" type="submit">Masuk</button>
+                    <button class="btn bg-blue text-white" type="submit">Daftar</button>
+                </div> -->
+            </div>
+        </nav>
+        <div id="hero">
+            <img class="w-100" src="assets/img/hero-1.png" alt="">
+            <h2 class="ff-kidzone tagline">Buku Digital</h2>
+        </div>
+        <img src="" alt="">
+        <div class="container">
+            <div class="row tab-book-2 mt-3">
+                <div class="d-flex justify-content-center">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex flex-column align-items-center" href="buku_bacaan.html">
+                                <img src="assets/icon/book_active.svg" alt="">
+                                <span>Buku Bacaan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="buku_komik.html">
+                                <img src="assets/icon/komik.svg" alt="">
+                                <span>Buku Komik</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="buku_audio.html">
+                                <img src="assets/icon/audio.svg" alt="">
+                                <span>Buku Audio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="buku_video.html">
+                                <img src="assets/icon/video.svg" alt="">
+                                <span>Buku Video</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content mt-3">
+                <div class="tab-pane container active" id="buku_bacaan">
+                    <div class="d-flex justify-content-center">
+                        <div class="home-tab">
+                            <div class="home-tab-body">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p>Jenjang</p>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p>Tema</p>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                        <p>Bahasa</p>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p>Format</p>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="input-search">
+                                    <input type="text" class="form-control" placeholder="Cari">
+                                    <button class="btn"><i class="bi bi-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-5 filter-theme">
+                        <div class="col"><a class="active" href="">Semua Tema</a></div>
+                        <div class="col"><a href="">Kuliner</a></div>
+                        <div class="col"><a href="">Petualangan</a></div>
+                        <div class="col"><a href="">Seni dan Budaya</a></div>
+                        <div class="col"><a href="">Tokoh Indonesia</a></div>
+                        <div class="col"><a href="">Alam dan Lingkungan</a></div>
+                        <div class="col"><a href="">Anak Indonesia</a></div>
+                        <div class="col"><a href="">Arsitektur</a></div>
+                        <div class="col"><a href="">Bahasa</a></div>
+                        <div class="col"><a href="">Cerita Rakyat</a></div>
+                        <div class="col"><a href="">Ekonomi Kreatif</a></div>
+                        <div class="col"><a href="">Hewan dan Tumbuhan</a></div>
+                        <div class="col"><a href="">Kebencanaan</a></div>
+                        <div class="col"><a href="">Keberagaman</a></div>
+                        <div class="col"><a href="">Kesehatan</a></div>
+                        <div class="col"><a href="">Transportasi</a></div>
+                    </div>
+                    <!-- asdfasdf -->
+                    <h3 class="mt-5 mb-3">Hasil Pencarian Buku Bacaan</h3>
+                    <div class="row row-cols-5 card-pagination">
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <a href="alia_juga_berani.html" class="text-decoration-none text-dark">
+                                    <img src="assets/img/buku_bacaan/paud/1.jpg" alt="" class="img-fluid">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex">
+                                            <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                            <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                        </div>
+                                        <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                    </div>
+                                </a>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        Alia Juga Berani
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/2.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/3.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/4.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/5.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/6.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/7.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/8.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/paud/9.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/1.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-5 card-pagination">
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/2.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        Alia Juga Berani
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/3.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/4.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/5.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/6.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/7.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/8.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/9.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-1">
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/10.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card p-2">
+                                <img src="assets/img/buku_bacaan/sd/11.jpg" alt="" class="img-fluid">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span><img src="assets/icon/love.svg" alt=""> 100</span>
+                                        <span><img src="assets/icon/little-book.svg" alt=""> 100</span>
+                                    </div>
+                                    <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                                <div class="card-body p-1">
+                                    <div class="card-title fw-bold">
+                                        KERAMAT RIAK
+                                    </div>
+                                    <p class="card-text">Author: Raline</p>
+                                    <p class="card-text">Tema: Pelajaran</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation" id="pagin" class="d-flex">
+                            <span class="page-item prev"><button class="page-link" href=""><img
+                                        src="assets/icon/prev-2.svg" alt=""></button></span>
+                            <ul class="pagination">
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            </ul>
+                            <span class="page-item next"><button class="page-link" href=""><img
+                                        src="assets/icon/next-2.svg" alt=""></button></button></span>
+                        </nav>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="sd">
+                    <div class="tab-pane container active" id="paud">
+                        <div class="row row-cols-6">
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="smp">
+                    <div class="tab-pane container active" id="paud">
+                        <div class="row row-cols-6">
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="sma">
+                    <div class="tab-pane container active" id="paud">
+                        <div class="row row-cols-6">
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="umum">
+                    <div class="tab-pane container active" id="paud">
+                        <div class="row row-cols-6">
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/4.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/5.jpg" alt="" class="img-fluid"></div>
+                            <div class="col mb-4"><img src="assets/img/6.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-5" class="mt-5 mb-5">
+            <h2 class="ff-bubblewump text-center mb-4">Paling Banyak Dibaca</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme px-5" id="owl-carousel-2">
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/smp/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/paling_dibaca/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/sma/1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/smp/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/paling_dibaca/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/sma/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="section-2">
+            <div class="container">
+                <div class="header d-flex justify-content-between">
+                    <h2 class="fw-bold">Lanjutkan yuk, Febri</h2>
+                    <a href="">Lihat Semua</a>
+                </div>
+                <div class="row row-cols-5">
+                    <div class="col">
+                        <img class="img-fluid" src="assets/img/lanjutkan_yuk/1.png" alt="">
+                        <div class="icon">
+                            <img src="assets/icon/play.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="assets/img/lanjutkan_yuk/2.png" alt="">
+                        <div class="icon">
+                            <img src="assets/icon/mic.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="assets/img/lanjutkan_yuk/3.png" alt="">
+                        <div class="icon">
+                            <img src="assets/icon/mic.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="assets/img/lanjutkan_yuk/4.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="assets/img/lanjutkan_yuk/5.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="container-fluid pb-5">
+            <div class="row pt-3 px-5">
+                <img class="img-fluid" src="assets/icon/board.svg" alt="">
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="assets/img/logo.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-10">
+                                <p class="fs-6 text-dark fs-12px">Kementerian Pendidikan, Kebudayaan, Riset, dan
+                                    Teknologi
+                                    Badan Pengembangan dan Pembinaan Bahasa
+                                    Pusat Pembinaan Bahasa dan Sastra</p>
+                                <p>Menuju terwujudnya insan berkarakter dan jati diri bangsa melalui bahasa dan sastra
+                                    Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold fs-5 text-dark">Produk</p>
+                        <a href="" class="d-block text-decoration-none mb-3">Buku Digital</a>
+                        <a href="" class="d-block text-decoration-none mb-3">Buku Komik</a>
+                        <a href="" class="d-block text-decoration-none mb-3">Buku Audio</a>
+                        <a href="" class="d-block text-decoration-none mb-3">Buku Video</a>
+                        <a href="" class="d-block text-decoration-none mb-3">Referensi</a>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold fs-5 text-dark">Panduan</p>
+                        <a href="" class="d-block text-decoration-none mb-3">Tentang Budi</a>
+                        <a href="" class="d-block text-decoration-none mb-3">Kebijakan</a>
+                        <a href="" class="d-block text-decoration-none mb-3">Kontak Kami</a>
+                    </div>
+                    <div class="col-4">
+                        <p class="fw-bold fs-5 text-dark">Kontak Kami</p>
+                        <p class="p-0"><img src="assets/icon/evelope.svg" alt=""> badan.bahasa@kemdikbud.go.id</p>
+                        <p><img src="assets/icon/telephone.svg" alt=""> (021) 4750406</p>
+                        <p><img src="assets/icon/pin.svg" alt=""> Jalan Daksinapati Barat IV, Rawamangun, Jakarta
+                            13220</p>
+                    </div>
+                </div>
+                <div class="row sosmed-icon">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-10">
+                                <img src="assets/icon/instagram.svg" alt="">
+                                <img src="assets/icon/facebook.svg" alt="">
+                                <img src="assets/icon/twitter.svg" alt="">
+                                <img src="assets/icon/youtube.svg" alt="">
+                                <img src="assets/icon/tiktok.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <p class="text-end">Jam Operasional : (Senin - Kamis : 09.00 - 17.00 WIB, Jumat : 09.00 - 16.00
+                            WIB)</p>
+                    </div>
+                </div>
+                <div class="dash"></div>
+                <div class="copyright py-4 px-5 text-dark">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            Copyright &copy 2022
+                        </div>
+                        <div>
+                            All right reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/fontawesome/js/all.js"></script>
+    <script src="assets/vendor/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</html>

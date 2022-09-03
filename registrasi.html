@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+	<title>Registrasi</title>
+</head>
+<body class="registrasi">
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-center budi-navbar">
+		<div class="container px-5">
+			<a class="navbar-brand" href="#">
+				<img  src="assets/img/logo.png" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0">
+					<li class="nav-item px-3">
+						<a class="nav-link active" aria-current="page" href="#">Beranda</a>
+					</li>
+					<li class="nav-item px-3 dropdown">
+						<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Buku
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Buku Digital</a></li>
+							<li><a class="dropdown-item" href="#">Buku Komik</a></li>
+							<li><a class="dropdown-item" href="#">Buku Audio</a></li>
+							<li><a class="dropdown-item" href="#">Buku Video</a></li>
+						</ul>
+						<li class="nav-item px-3">
+							<a class="nav-link active" aria-current="page" href="#">Pustakaku</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link active" aria-current="page" href="#">Referensi</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link active" aria-current="page" href="#">Kontak Kami</a>
+						</li>
+					</li>
+				</ul>
+			</div>
+			<div class="d-flex">
+				<button class="btn text-blue" type="submit">Masuk</button>
+				<button class="btn bg-blue text-white" type="submit">Daftar</button>
+			</div>
+		</div>
+	</nav>
+	<div class="container mt-5 pt-5" style="padding-bottom: 200px;">
+		<div class="d-flex justify-content-center">
+			<img src="assets/img/logo.png" alt="" style="width:120px">
+		</div>
+		<div class="row d-flex justify-content-center">
+			<div class="col-6 bg-white">
+				<h5 class="fw-bold">Selamat Datang</h5>
+				<p class="card-text">Silakan masukan Email dan Kata Sandi</p>
+				<form action="" class="mb-5">
+					<div class="row">
+						<div class="col">
+							<input type="text" class="form-control mb-3 py-3" placeholder="Nama Depan" aria-label="First name">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control mb-3 py-3" placeholder=" Pos-el atau No. Ponsel" aria-label="Last name">
+						</div>
+					</div>
+					<input type="text" class="form-control mb-3 py-3" id="exampleFormControlInput1" placeholder="Pengguna">
+					<div class="row">
+						<div class="col">
+							<select class="form-select mb-3 py-3" aria-label="size 3 select example" placeholder="adfadf">
+								<option selected>Kota/Kabupaten</option>
+								<option value="1">Kota A</option>
+								<option value="2">Kota B</option>
+								<option value="3">Kota C</option>
+							</select>
+						</div>
+						<div class="col">
+							<select class="form-select mb-3 py-3" aria-label="size 3 select example" placeholder="adfadf">
+								<option selected>Kecamatan</option>
+								<option value="1">Kecamatan A</option>
+								<option value="2">Kecamatan B</option>
+								<option value="3">Kecamatan C</option>
+							</select>
+						</div>
+						<div class="col">
+							<select class="form-select mb-3 py-3" aria-label="size 3 select example" placeholder="adfadf">
+								<option selected>Kelurahan</option>
+								<option value="1">Kelurahan A</option>
+								<option value="2">Kelurahan B</option>
+								<option value="3">Kelurahan C</option>
+							</select>
+						</div>
+					</div>
+					<select class="form-select mb-3 py-3" aria-label="size 3 select example" placeholder="adfadf">
+						<option selected>Status</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					<input type="text" class="form-control mb-3 py-3" id="exampleFormControlInput1" placeholder="Pengguna  (Contoh : @Budiberbudi)">
+					<input type="password" class="form-control mb-3 py-3" id="exampleFormControlInput1" placeholder="Kata sandi">
+					<button class="btn bg-blue text-white w-100 py-2 ">Buat Akun</button>
+				</form>
+				<p class="text-center mt-5">Sudah memiliki akun? <a href="" class="text-decoration-none text-blue fw-bold">Masuk</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+</html>
