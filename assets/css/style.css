@@ -692,7 +692,6 @@ footer .dash {
   grid-template-rows: 6px auto;
   padding-top: 5px;
 }
-
 .audio-player .timeline {
   background: white;
   width: 100%;
@@ -701,26 +700,17 @@ footer .dash {
   border: 1px solid black;
   border-radius: 3px;
 }
-
 .audio-player .timeline .progress {
   background: #0190D6;
   width: 0%;
   height: 100%;
   transition: 0.25s;
 }
-
 .audio-player .controls {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
-
-.audio-player .controls > * {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .audio-player .controls .toggle-play.play {
   cursor: pointer;
   position: relative;
@@ -730,18 +720,24 @@ footer .dash {
   border: 7px solid rgba(0, 0, 0, 0);
   border-left: 13px solid #0190D6;
 }
-
+.audio-player .controls .toggle-play-2.play {
+  border-left: 13px solid #2B388B;
+}
+.audio-player .controls .toggle-play-2.pause:before {
+  background: #2B388B !important;
+}
+.audio-player .controls .toggle-play-2.pause:after {
+  background: #2B388B !important;
+}
 .audio-player .controls .toggle-play.play:hover {
   transform: scale(1.1);
 }
-
 .audio-player .controls .toggle-play.pause {
   height: 15px;
   width: 20px;
   cursor: pointer;
   position: relative;
 }
-
 .audio-player .controls .toggle-play.pause:before {
   position: absolute;
   top: 0;
@@ -751,7 +747,6 @@ footer .dash {
   height: 15px;
   width: 3px;
 }
-
 .audio-player .controls .toggle-play.pause:after {
   position: absolute;
   top: 0;
@@ -761,36 +756,29 @@ footer .dash {
   height: 15px;
   width: 3px;
 }
-
 .audio-player .controls .toggle-play.pause:hover {
   transform: scale(1.1);
 }
-
 .audio-player .controls .time {
   color: #9D9D9D;
   display: flex;
 }
-
 .audio-player .controls .time > * {
   padding: 2px;
 }
-
 .audio-player .controls .volume-container {
   cursor: pointer;
   position: relative;
   z-index: 2;
 }
-
 .audio-player .controls .volume-container .volume-button {
   height: 26px;
   display: flex;
   align-items: center;
 }
-
-.audio-player .controls .volume-container .volume-button .volume {
+.audio-player .controls .volume-container .volume {
   transform: scale(0.7);
 }
-
 .audio-player .controls .volume-container .volume-slider {
   position: absolute;
   left: -3px;
@@ -802,16 +790,19 @@ footer .dash {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6666666667);
   transition: 0.25s;
 }
-
-.audio-player .controls .volume-container .volume-slider .volume-percentage {
+.audio-player .controls .volume-container .volume-percentage {
   background: coral;
   height: 100%;
   width: 75%;
 }
-
 .audio-player .controls .volume-container:hover .volume-slider {
   left: -123px;
   width: 120px;
+}
+.audio-player .controls > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-container-for-icon {
