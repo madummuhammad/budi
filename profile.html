@@ -9,12 +9,7 @@
         <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
         <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/css/owl.carousel.css">
-        <!-- <link rel="stylesheet" href="assets/vendor/pdf/css/normalize.css"> -->
-        <link rel="stylesheet" href="assets/vendor/pdf/wow_book/wow_book.css" type="text/css" />
-        <!-- <link rel="stylesheet" href="assets/vendor/pdf/css/main.css"> -->
-
-        <script src="assets/vendor/pdf/js/vendor/modernizr-2.7.1.min.js"></script>
-        <title>Alia Juga Berani</title>
+        <title>Profile</title>
     </head>
 
     <body>
@@ -73,66 +68,110 @@
             </div>
         </nav>
         <div class="dash"></div>
-        <div class="container mt-5" id="kontak_kami">
-            <div class="row">
-                <div class="col-5">
-                    <img class="img-fluid" src="assets/img/kontak_kami.png" alt="">
-                </div>
-                <div class="col-7 ps-5">
-                    <h1 class="ff-kidzone fs-70px">Kontak Kami</h1>
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="p-0"><img src="assets/icon/evelope.svg" alt=""> badan.bahasa@kemdikbud.go.id</p>
-                            <p><img src="assets/icon/pin.svg" alt=""> Jalan Daksinapati Barat IV, Rawamangun, Jakarta
-                                13220</p>
-                        </div>
-                        <div class="col-6">
-                            <p><img src="assets/icon/telephone.svg" alt=""> (021) 4750406</p>
-                            <p class="m-0"> <img src="assets/icon/clock.svg" alt=""> Jam Operasional:</p>
-                            <p class="ps-4 m-0"><span class="fw-bold">Senin - Kamis</span>:
-                                09.00 - 17.00 WIB,
-                            </p>
-                            <p class="ps-4"><span class="fw-bold">Jumat</span>:
-                                09.00 - 16.00 WIB
-                            </p>
+        <div class="container page-profile">
+            <div class="row mt-5">
+                <h2 class="text-dark fw-bold mb-5" style="font-size: 38px;">Profile</h2>
+                <div class="col-4">
+                    <div class="profile-container">
+                        <img class="img-fluid profile" src="assets/img/profile.png" alt="">
+                        <div class="profile-medal-container">
+                            <img class="profile-medal" src="assets/icon/medali.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12">
-                        <p>Media Sosial</p>
-                        <img class="mx-2" src="assets/icon/instagram.svg" alt="">
-                        <img class="mx-2" src="assets/icon/facebook.svg" alt="">
-                        <img class="mx-2" src="assets/icon/twitter.svg" alt="">
-                        <img class="mx-2" src="assets/icon/rss.svg" alt="">
-                        <img class="mx-2" src="assets/icon/linkedin.svg" alt="">
+                    <div class="input-file d-flex justify-content-center">
+                        <input type="file" id="upload" hidden>
+                        <label class="text-decoration-underline text-center text-blue mt-4" for="upload">Ganti
+                            Foto</label>
+                    </div>
+                </div>
+                <div class="col-7 ps-5">
+                    <div class="d-flex align-items-center justify-content-between mb-5">
+                        <h2 class="fw-bold">Febri Hidayanto Azzikri</h2>
+                        <button class="btn text-blue"><i class="fas fa-edit"></i></button>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3 fw-bold"><img style="width: 20px;" src="assets/icon/email.svg" alt=""> Email
+                        </div>
+                        <div class="col-9 fw">: febrihiazz@gmail.com</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3 fw-bold"><img style="width: 20px;" src="assets/icon/medal.svg" alt=""> Medali
+                        </div>
+                        <div class="col-9">: Perunggu</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3 fw-bold"><img style="width: 20px;" src="assets/icon/pin-2.svg" alt=""> Alamat
+                        </div>
+                        <div class="col-9">: Nerada Estate B9-12, Ciputat, Tangerang Selatan</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3 fw-bold"><img style="width: 20px;" src="assets/icon/profesi.svg" alt="">
+                            Profesi
+                        </div>
+                        <div class="col-9"> : Pelajar</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3 fw-bold"><img style="width: 20px;" src="assets/icon/toga.svg" alt=""> Jenjang
+                        </div>
+                        <div class="col-9"> : SMA</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3 fw-bold"><img style="width: 20px;" src="assets/icon/building.svg" alt="">
+                            Instansi</div>
+                        <div class="col-9"> : SMAN 3 Tangerang Selatan</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="kontak-section-1">
-            <div class="container p-5">
-                <div class="row">
-                    <div class="col-6">
-                        <h2 class="fs-40px fw-bold">Kirim Pesan</h2>
-                        <form action="">
-                            <div class="mb-3">
-                                <input type="text" class="form-control py-3" id="exampleFormControlInput1"
-                                    placeholder="Nama">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control py-3" id="exampleFormControlInput1"
-                                    placeholder="Alamat Email">
-                            </div>
-                            <div class="mb-3">
-                                <textarea name="" id="" cols="30" rows="10" class="form-control py-3"
-                                    placeholder="Pesan"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <button class="btn bg-blue text-white w-100 py-3">Kirim</button>
-                            </div>
-                        </form>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="profile-banner">
+                    <div class="col-12 profile-banner-img">
+                        <img class="img-fluid" src="assets/img/profile-banner.png" alt="">
                     </div>
-                    <div class="col-6">
-                        <img src="assets/img/kirim_pesan.png" alt="" class="img-fluid">
+                    <div class="profile-banner-tagline">
+                        <h2>Selamat Febri sudah mencapai Medali Perunggu</h2>
+                        <p>Terus tingkatkan prestasi membacamu dan capai medali Emasnya !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row profile-list">
+                <h5 class="fw-bold">Syarat dan Ketentuan Medali</h5>
+                <div class="row">
+                    <div class="profile-list-item">
+                        <div class="number">
+                            #1
+                        </div>
+                        <div class="profile-list-content">
+                            <h5 class="fw-bold">Medali Emas</h5>
+                            <p>Membaca minimal 100 buku (hingga selesai)</p>
+                            <p>Mengunduh minimal 150 buku</p>
+                            <p>Membagikan buku kepada teman minimal 20 buku</p>
+                        </div>
+                    </div>
+                    <div class="profile-list-item">
+                        <div class="number">
+                            #2
+                        </div>
+                        <div class="profile-list-content">
+                            <h5 class="fw-bold">Medali Perak</h5>
+                            <p>Membaca minimal 80 buku (hingga selesai)</p>
+                            <p>Mengunduh minimal 100 buku</p>
+                            <p>Membagikan buku kepada teman minimal 10 buku</p>
+                        </div>
+                    </div>
+                    <div class="profile-list-item">
+                        <div class="number">
+                            #3
+                        </div>
+                        <div class="profile-list-content">
+                            <h5 class="fw-bold">Medali Perunggu</h5>
+                            <p>Membaca minimal 50 buku (hingga selesai)</p>
+                            <p>Mengunduh minimal 70 buku</p>
+                            <p>Membagikan buku kepada teman minimal 10 buku</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,20 +247,12 @@
                 </div>
             </div>
         </footer>
-        <div class='book_container'>
-            <div id="book"></div>
-        </div>
     </body>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/fontawesome/js/all.js"></script>
     <script src="assets/vendor/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
-    <!-- <script src="assets/vendor/pdf/js/helper.js"></script> -->
-
-    <script type="text/javascript" src="assets/vendor/pdf/wow_book/pdf.combined.min.js"></script>
-    <script src="assets/vendor/pdf/wow_book/wow_book.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="assets/js/script.js"></script>
 
 </html>

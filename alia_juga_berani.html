@@ -20,7 +20,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-center budi-navbar">
             <div class="container px-5">
-                <a class="navbar-brand" href="homepage.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/img/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="homepage.html">Beranda</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
                         </li>
                         <li class="nav-item px-3 dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
@@ -44,22 +44,32 @@
                                 <li><a class="dropdown-item" href="buku_audio.html">Buku Audio</a></li>
                                 <li><a class="dropdown-item" href="buku_video.html">Buku Video</a></li>
                             </ul>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#">Pustakaku</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#">Referensi</a>
+                            <a class="nav-link active" aria-current="page" href="pustakaku.html">Pustakaku</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#">Kontak Kami</a>
+                            <a class="nav-link active" aria-current="page" href="referensi_buku.html">Referensi</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="kontak_kami.html">Kontak Kami</a>
                         </li>
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="d-flex">
-                    <button class="btn text-blue" type="submit">Masuk</button>
-                    <button class="btn bg-blue text-white" type="submit">Daftar</button>
-                </div> -->
+                <div class="d-flex navbar-profile align-items-center">
+                    <img src="assets/img/profile.png" alt="">
+                    <div class="nav-item px-3 dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Febri
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item text-blue" href="login.html">Keluar</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="dash"></div>
@@ -87,8 +97,8 @@
                                     alt="">
                                 100</span>
                         </div>
-                        <span class="">
-                            <img src="assets/icon/star.svg" alt="">
+                        <span class="d-flex">
+                            <img class="img-fluid" src="assets/icon/star.svg" alt="">
                             4.9
                         </span>
                     </div>
@@ -96,36 +106,36 @@
                         <div class="col-4 mb-2">
                             <span>Pengarang</span>
                         </div>
-                        <div class="col-6 mb-2">
+                        <div class="col-8 mb-2">
                             <span>: Liza Erfiana</span>
                         </div>
                         <div class="col-4 mb-2">
                             <span>Tema</span>
                         </div>
-                        <div class="col-6 mb-2">
-                            <span>: </span>
+                        <div class="col-8 mb-2">
+                            <span>: Anak Indonesia</span>
                         </div>
                         <div class="col-4 mb-2">
                             <span>Halaman</span>
                         </div>
-                        <div class="col-6 mb-2">
+                        <div class="col-8 mb-2">
                             <span>: 24</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-9 ps-5">
                     <h1 class="fw-bold mb-5">Alia Juga Berani</h1>
-                    <p class="fs-16px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                    <p class="fs-16px">
+                        Alia takut lupa lagunya. Tubuhnya gemetar ketika ibu guru memanggilnya untuk bernyanyi. Namun,
+                        ada sesuatu yang membuat Alia jadi berani menyanyi.
+                    </p>
+                    <p>
+                        Kalian mau tahu? Yuk, kita baca kisahnya.
                     </p>
                     <div class="baca-button-group d-flex mt-5 pt-5">
                         <button
                             class="btn bg-blue text-white d-flex justify-content-center align-items-center py-2 me-4"
-                            id="show_book"><i class="bi bi-book me-3 fs-5"></i> Baca
+                            id="show_book" data-book="assets/img/paud/1.pdf"><i class="bi bi-book me-3 fs-5"></i> Baca
                             Sekarang</button>
                         <button class="btn btn-outline-blue d-flex justify-content-center align-items-center
                             py-2 me-4"><i class="bi bi-download fs-5 me-3"></i> Unduh</button>
@@ -136,9 +146,9 @@
             </div>
             <div class="row mt-5 row-comment">
                 <h3 class="fw-bold">Berikan Komentarmu: </h3>
-                <div class="comment-profile mb-3">
+                <div class="comment-profile mb-3 mt-4">
                     <img src="assets/img/profile.png" alt="">
-                    <span class="fw-bold fs-2 ms-3">Febri</span>
+                    <span class="fw-bold fs-4 ms-3">Febri</span>
                 </div>
                 <div class="ratting">
                     <i class="fa-regular fa-star fs-3"></i>
@@ -159,10 +169,10 @@
                 <div class="card-comment mb-4">
                     <div class="card-comment-header">
                         <div class="d-flex align-items-center">
-                            <img src="assets/img/profile.png" alt="">
-                            <span class="fs-3 fw-bold ms-3">Andi</span>
+                            <img src="assets/img/andi.png" alt="">
+                            <span class="fs-5 fw-bold ms-3">Andi</span>
                         </div>
-                        <div class="">
+                        <div class="ratting">
                             <img src="assets/icon/star.svg" alt="">
                             <img src="assets/icon/star.svg" alt="">
                             <img src="assets/icon/star.svg" alt="">
@@ -179,10 +189,10 @@
                 <div class="card-comment mb-4">
                     <div class="card-comment-header">
                         <div class="d-flex align-items-center">
-                            <img src="assets/img/profile.png" alt="">
-                            <span class="fs-3 fw-bold ms-3">Sinta</span>
+                            <img src="assets/img/sinta.png" alt="">
+                            <span class="fs-5 fw-bold ms-3">Sinta</span>
                         </div>
-                        <div class="">
+                        <div class="ratting">
                             <img src="assets/icon/star.svg" alt="">
                             <img src="assets/icon/star.svg" alt="">
                             <img src="assets/icon/star.svg" alt="">
@@ -200,10 +210,10 @@
                 <div class="card-comment mb-4">
                     <div class="card-comment-header">
                         <div class="d-flex align-items-center">
-                            <img src="assets/img/profile.png" alt="">
-                            <span class="fs-3 fw-bold ms-3">Miftah</span>
+                            <img src="assets/img/miftah.png" alt="">
+                            <span class="fs-5 fw-bold ms-3">Miftah</span>
                         </div>
-                        <div class="">
+                        <div class="ratting">
                             <img src="assets/icon/star.svg" alt="">
                             <img src="assets/icon/star.svg" alt="">
                             <img src="assets/icon/star.svg" alt="">
@@ -218,28 +228,31 @@
                     </div>
                 </div>
                 <div class="row mt-5 mb-5" id>
-                    <div class="header d-flex justify-content-between">
+                    <div class="header d-flex justify-content-between" style="padding-right: 35px;">
                         <h2 class="fw-bold">Referensi Buku Sejenis</h2>
                         <a href="">Lihat Semua</a>
                     </div>
-                    <div class="row row-cols-5">
+                    <div class="row row-cols-6">
                         <div class="col">
-                            <img class="img-fluid" src="assets/img/lanjutkan_yuk/1.png" alt="">
+                            <img class="img-fluid" src="assets/img/referensi_sejenis/1.jpg" alt="">
 
                         </div>
                         <div class="col">
-                            <img class="img-fluid" src="assets/img/lanjutkan_yuk/2.png" alt="">
+                            <img class="img-fluid" src="assets/img/referensi_sejenis/2.jpg" alt="">
 
                         </div>
                         <div class="col">
-                            <img class="img-fluid" src="assets/img/lanjutkan_yuk/3.png" alt="">
+                            <img class="img-fluid" src="assets/img/referensi_sejenis/3.jpg" alt="">
 
                         </div>
                         <div class="col">
-                            <img class="img-fluid" src="assets/img/lanjutkan_yuk/4.png" alt="">
+                            <img class="img-fluid" src="assets/img/referensi_sejenis/4.jpg" alt="">
                         </div>
                         <div class="col">
-                            <img class="img-fluid" src="assets/img/lanjutkan_yuk/5.png" alt="">
+                            <img class="img-fluid" src="assets/img/referensi_sejenis/5.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" src="assets/img/referensi_sejenis/6.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -254,7 +267,7 @@
                                 <img src="assets/img/logo.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-10">
-                                <p class="fs-6 text-dark fs-12px">Kementerian Pendidikan, Kebudayaan, Riset, dan
+                                <p class="text-dark fw-bold">Kementerian Pendidikan, Kebudayaan, Riset, dan
                                     Teknologi
                                     Badan Pengembangan dan Pembinaan Bahasa
                                     Pusat Pembinaan Bahasa dan Sastra</p>
