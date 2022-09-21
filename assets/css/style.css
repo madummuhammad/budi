@@ -35,20 +35,12 @@
   src: url("../vendor/font/Kidzone-2qVv.ttf");
 }
 * {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-}
-
-.ff-bubblewump {
-  font-family: "Bubblewump";
+  font-family: "Andika New Basic Regular";
+  font-size: 16px;
 }
 
 .ff-kidzone {
   font-family: "KidZone";
-}
-
-.ff-andika {
-  font-family: "Andika New Basic Bold";
 }
 
 /*Utilitas Text Color*/
@@ -56,10 +48,42 @@
   color: #0190D6;
 }
 
+.text-green {
+  color: #9EB23B;
+}
+
+.text-green-2 {
+  color: rgb(104, 206, 84) !important;
+}
+
+.text-red {
+  color: #912227;
+}
+
+.text-very-red {
+  color: rgb(234, 2, 0) !important;
+}
+
+.text-oldblue {
+  color: #273B89;
+}
+
+.text-pink {
+  color: #F000FF;
+}
+
 /*End utilitas Text Color*/
 /*Utilitas Background Color*/
+.bg-orange {
+  background: rgb(223, 171, 8) !important;
+}
+
 .bg-blue {
   background-color: #0190D6;
+}
+
+.bg-young-blue {
+  background-color: rgb(49, 139, 172) !important;
 }
 
 .bg-oldblue {
@@ -68,6 +92,18 @@
 
 .bg-aqua {
   background-color: rgba(1, 144, 214, 0.04);
+}
+
+.bg-purple {
+  background-color: #70659E !important;
+}
+
+.bg-second-purple {
+  background-color: rgb(136, 79, 146) !important;
+}
+
+.bg-third-purple {
+  background-color: #D574A1 !important;
 }
 
 .btn-outline-blue {
@@ -127,6 +163,40 @@
   flex-grow: 0;
 }
 
+.dropdown .home-tab-body-dropdown-toggle::after {
+  border: none;
+  background-image: url("../icon/arrow_down.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23.1px;
+  height: 23.1px;
+}
+.dropdown .home-tab-body-dropdown-toggle:active {
+  display: none;
+}
+.dropdown .home-tab-body-dropdown-toggle.green::after {
+  background-color: #89FED7;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.dropdown .home-tab-body-dropdown-toggle.orange::after {
+  background-color: #DD681B;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.dropdown .home-tab-body-dropdown-toggle.green::after {
+  background-color: #9FCE43;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.dropdown .home-tab-body-dropdown-toggle.blue::after {
+  background-color: #397CF3;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
 .slider .carousel-control-prev-icon-container,
 .slider .carousel-control-next-icon-container {
   background-color: black;
@@ -151,9 +221,6 @@
   -moz-box-shadow: 18px 19px 0px -6px rgb(0, 20, 99);
   border-radius: 30px;
   border: 10px solid #273B89;
-}
-.slider .home-tab .title {
-  font-family: "Bubblewump";
 }
 .slider .home-tab .home-tab-body {
   padding-left: 40px;
@@ -407,7 +474,6 @@ body.registrasi {
   color: white;
 }
 #section-5 .owl-carousel .item img {
-  height: 260px;
   border-radius: 10px;
 }
 #section-5 .owl-carousel .owl-nav {
@@ -443,7 +509,6 @@ body.registrasi {
 }
 #section-6 .h2 {
   color: white;
-  -webkit-text-stroke: 1px black;
   /* width and color */
 }
 #section-6 .img {
@@ -480,14 +545,14 @@ body.registrasi {
   padding: 10px 40px;
 }
 
-#section-9 .card-news {
+.card-news {
   border: none;
   border-radius: 0px;
 }
-#section-9 .card-news img {
+.card-news img {
   height: 200px;
 }
-#section-9 .card-news .card-body .card-title {
+.card-news .card-body .card-title {
   font-size: 16px;
 }
 
@@ -532,7 +597,7 @@ body.registrasi {
 }
 
 #section-11 {
-  padding: 90px 0px;
+  padding-top: 90px;
 }
 #section-11 .dash {
   height: 1px;
@@ -544,7 +609,6 @@ body.registrasi {
   width: 50%;
 }
 #section-11 .img-section-11 .thumbnail-section-11 {
-  width: 282px;
   height: 328px;
 }
 #section-11 .img-section-11 .border-section-11 {
@@ -602,6 +666,7 @@ footer {
   padding-right: 50px !important;
   padding-top: 50px !important;
   color: #747474;
+  margin-top: 30px;
 }
 footer p {
   font-size: 16px;
@@ -633,7 +698,7 @@ footer .dash {
 }
 
 .baca-button-group button {
-  width: 30%;
+  width: 25%;
 }
 
 .row-comment .comment-profile {
@@ -642,6 +707,7 @@ footer .dash {
 }
 .row-comment .comment-profile img {
   border-radius: 100%;
+  width: 50px;
 }
 .row-comment textarea {
   border-radius: 10px;
@@ -661,6 +727,10 @@ footer .dash {
 }
 .row-review .card-comment .card-comment-header img {
   border-radius: 100%;
+  width: 50px;
+}
+.row-review .card-comment .ratting img {
+  width: 25px;
 }
 
 #hero {
@@ -819,6 +889,102 @@ footer .dash {
   width: 40px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-profile img {
+  width: 30px;
+  border-radius: 100%;
+}
+
+.news-detail {
+  margin-top: 20px;
+}
+.news-detail .title {
+  display: flex;
+  align-items: top;
+  width: 100%;
+}
+.news-detail .title .share {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
+.news-detail .title .share a {
+  color: black;
+  margin: 0px 5px;
+}
+.news-detail .title .share a i {
+  font-size: 20px;
+}
+.news-detail .author {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.news-detail .news-body .tag .tag-item {
+  background-color: #F3EDED;
+  padding: 2px 4px;
+  margin: 4px 4px;
+}
+
+.page-profile .profile-container {
+  position: relative;
+}
+.page-profile .profile-container .profile-medal-container {
+  border: 5px solid rgb(1, 144, 214);
+  background-color: white;
+  position: absolute;
+  left: -55px;
+  bottom: 0;
+  border-radius: 100%;
+  padding: 15px;
+}
+.page-profile .profile-container .profile-medal-container .profile-medal {
+  width: 70px;
+}
+
+.profile-banner {
+  position: relative;
+}
+.profile-banner .profile-banner-tagline {
+  position: absolute;
+  bottom: 0;
+  padding-top: 50px;
+  top: 0;
+  right: 0;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.profile-list {
+  margin-bottom: 50px;
+}
+.profile-list .profile-list-item {
+  margin: 10px 0;
+  background-color: rgb(244, 244, 244);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.profile-list .profile-list-item .number {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #0190D6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  margin-right: 30px;
+}
+.profile-list .profile-list-item .profile-list-content p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
