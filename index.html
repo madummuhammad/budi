@@ -57,7 +57,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="slider">
+		<div class="slider overflow-hidden">
 			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -85,63 +85,79 @@
 			<div class="d-flex justify-content-center">
 				<div class="home-tab">
 					<h2 class="text-center title fw-bold fs-4 mb-4">Temukan Buku sesuai minat dan kebutuhanmu</h2>
-					<div class="home-tab-body">
-						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle green"
-								type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<p>Jenjang</p>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">SD (123)</a></li>
-								<li><a class="dropdown-item" href="#">SD (456)</a></li>
-								<li><a class="dropdown-item" href="#">SMP</a></li>
-								<li><a class="dropdown-item" href="#">SMA</a></li>
-							</ul>
-						</div>
-						<div class="dropdown">
-							<button
-								class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle orange dropdown-toggle"
-								type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<p>Tema</p>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Kuliner</a></li>
-								<li><a class="dropdown-item" href="#">Petualangan</a></li>
-								<li><a class="dropdown-item" href="#">Seni & Budaya</a></li>
-								<li><a class="dropdown-item" href="#">Tokoh Indonesia</a></li>
-								<li><a class="dropdown-item" href="#">Alam & Lingkungan</a></li>
-								<li><a class="dropdown-item" href="#">Anak Indonesia</a></li>
-								<li><a class="dropdown-item" href="#">Arsitektur</a></li>
-							</ul>
-						</div>
-						<div class="dropdown">
-							<button
-								class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle dropdown-toggle green"
-								type="button" data-bs-toggle="dropdown" aria-expanded="true">
-								<p>Bahasa</p>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Indonesia</a></li>
-								<li><a class="dropdown-item" href="#">Inggris</a></li>
-								<li><a class="dropdown-item" href="#">Daerah</a></li>
-							</ul>
-						</div>
-						<div class="dropdown">
-							<button
-								class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle dropdown-toggle blue"
-								type="button" data-bs-toggle="dropdown" aria-expanded="true">
-								<p>Format</p>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Buku Bacaan</a></li>
-								<li><a class="dropdown-item" href="#">Buku Komik</a></li>
-								<li><a class="dropdown-item" href="#">Buku Audio</a></li>
-								<li><a class="dropdown-item" href="#">Buku Video</a></li>
-							</ul>
-						</div>
-						<div class="input-search">
-							<input type="text" class="form-control" placeholder="Cari">
-							<button class="btn"><i class="bi bi-search"></i></button>
+					<div class="home-tab-body w-100">
+						<div class="container">
+							<div class="row">
+	                    		<button class="d-block d-sm-none text-center mx-auto btn text-decoration-underline" onclick="this.nextSibling.nextSibling.classList.toggle('d-none');this.nextSibling.nextSibling.nextSibling.nextSibling.classList.toggle('d-none');this.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.classList.toggle('d-none');this.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.classList.toggle('d-none');">Pilih Jenjang, Tema, Bahasa, dan Format</button>							
+								<div class="d-none d-sm-block col-12 col-md-2 my-1">
+									<div class="dropdown w-100">
+										<button class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle green"
+											type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<p>Jenjang</p>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">SD (123)</a></li>
+											<li><a class="dropdown-item" href="#">SD (456)</a></li>
+											<li><a class="dropdown-item" href="#">SMP</a></li>
+											<li><a class="dropdown-item" href="#">SMA</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="d-none d-sm-block col-12 col-md-2 my-1">
+									<div class="dropdown w-100">
+										<button
+											class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle orange dropdown-toggle"
+											type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<p>Tema</p>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Kuliner</a></li>
+											<li><a class="dropdown-item" href="#">Petualangan</a></li>
+											<li><a class="dropdown-item" href="#">Seni & Budaya</a></li>
+											<li><a class="dropdown-item" href="#">Tokoh Indonesia</a></li>
+											<li><a class="dropdown-item" href="#">Alam & Lingkungan</a></li>
+											<li><a class="dropdown-item" href="#">Anak Indonesia</a></li>
+											<li><a class="dropdown-item" href="#">Arsitektur</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="d-none d-sm-block col-12 col-md-2 my-1">
+									<div class="dropdown w-100">
+										<button
+											class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle dropdown-toggle green"
+											type="button" data-bs-toggle="dropdown" aria-expanded="true">
+											<p>Bahasa</p>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Indonesia</a></li>
+											<li><a class="dropdown-item" href="#">Inggris</a></li>
+											<li><a class="dropdown-item" href="#">Daerah</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="d-none d-sm-block col-12 col-md-2 my-1">
+									<div class="dropdown w-100">
+										<button
+											class="btn btn-secondary dropdown-toggle home-tab-body-dropdown-toggle dropdown-toggle blue"
+											type="button" data-bs-toggle="dropdown" aria-expanded="true">
+											<p>Format</p>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Buku Bacaan</a></li>
+											<li><a class="dropdown-item" href="#">Buku Komik</a></li>
+											<li><a class="dropdown-item" href="#">Buku Audio</a></li>
+											<li><a class="dropdown-item" href="#">Buku Video</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 my-1">
+									<div class="input-search w-100">
+										<input type="text" class="form-control" placeholder="Cari">
+										<button class="btn"><i class="bi bi-search"></i></button>
+									</div>
+									
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -155,29 +171,43 @@
 			</div>
 			<div class="row tab-book mt-3">
 				<div class="d-flex justify-content-center">
-					<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link active" data-bs-toggle="pill" href="#paud">PAUD</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-bs-toggle="pill" href="#sd">SD</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-bs-toggle="pill" href="#smp">SMP</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-bs-toggle="pill" href="#sma">SMA</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-bs-toggle="pill" href="#umum">UMUM</a>
-						</li>
-					</ul>
+					<div class="row w-100 justify-content-center">
+						<div class="col-12 col-md-6">
+							<ul class="nav nav-pills w-100">
+								<div class="container">
+									<div class="row row-cols-3 row-cols-md-5 justify-content-center">
+										<div class="col">
+												<a class="nav-link text-center active" data-bs-toggle="pill" href="#paud">PAUD</a>
+											
+										</div>
+										<div class="col">
+												<a class="nav-link text-center" data-bs-toggle="pill" href="#sd">SD</a>
+											
+										</div>
+										<div class="col">
+												<a class="nav-link text-center" data-bs-toggle="pill" href="#smp">SMP</a>
+											
+										</div>
+										<div class="col">
+												<a class="nav-link text-center" data-bs-toggle="pill" href="#sma">SMA</a>
+											
+										</div>
+										<div class="col">
+												<a class="nav-link text-center" data-bs-toggle="pill" href="#umum">UMUM</a>
+											
+										</div>
+									</div>
+								</div>
+							</ul>
+							
+						</div>
+					</div>
 				</div>
 
 				<!-- Tab panes -->
 				<div class="tab-content mt-5">
 					<div class="tab-pane container active" id="paud">
-						<div class="row row-cols-6">
+						<div class="row row-cols-2 row-cols-md-6">
 							<a href="alia_juga_berani.html">
 								<div class="col mb-4"><img src="assets/img/paud/1.jpg" alt="" class="img-fluid"></div>
 							</a>
@@ -224,7 +254,7 @@
 						</div>
 					</div>
 					<div class="tab-pane container fade" id="sd">
-						<div class="row row-cols-6">
+						<div class="row row-cols-2 row-cols-md-6">
 							<div class="col mb-4"><img src="assets/img/sd/1.jpg" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/sd/2.jpg" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/sd/3.jpg" alt="" class="img-fluid"></div>
@@ -240,7 +270,7 @@
 						</div>
 					</div>
 					<div class="tab-pane container fade" id="smp">
-						<div class="row row-cols-6">
+						<div class="row row-cols-2 row-cols-md-6">
 							<div class="col mb-4"><img src="assets/img/smp/1.jpg" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/smp/2.png" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/smp/3.png" alt="" class="img-fluid"></div>
@@ -256,7 +286,7 @@
 						</div>
 					</div>
 					<div class="tab-pane container fade" id="sma">
-						<div class="row row-cols-6">
+						<div class="row row-cols-2 row-cols-md-6">
 							<div class="col mb-4"><img src="assets/img/sma/1.png" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/sma/2.jpg" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/sma/3.png" alt="" class="img-fluid"></div>
@@ -272,7 +302,7 @@
 						</div>
 					</div>
 					<div class="tab-pane container fade" id="umum">
-						<div class="row row-cols-6">
+						<div class="row row-cols-2 row-cols-md-6">
 							<div class="col mb-4"><img src="assets/img/sd/1.jpg" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/sd/2.jpg" alt="" class="img-fluid"></div>
 							<div class="col mb-4"><img src="assets/img/sd/3.jpg" alt="" class="img-fluid"></div>
@@ -294,43 +324,49 @@
 					<p class="text-center mt-2">Kapan pun & Di mana pun</p>
 				</div>
 			</div>
-			<section id="section-2" class="mt-5">
-				<div class="header d-flex justify-content-between">
-					<h2 class="fw-bold fs-3">Lanjutkan yuk, Febri</h2>
-					<a href="pustakaku.html">Lihat Semua</a>
-				</div>
-				<div class="row row-cols-5 mt-4">
-					<div class="col">
-						<img class="img-fluid" src="assets/img/lanjutkan_yuk/1.png" alt="">
-						<div class="icon">
-							<img src="assets/icon/play.svg" alt="">
-						</div>
-					</div>
-					<div class="col">
-						<img class="img-fluid" src="assets/img/lanjutkan_yuk/2.png" alt="">
-						<div class="icon">
-							<img src="assets/icon/mic.svg" alt="">
-						</div>
-					</div>
-					<div class="col">
-						<img class="img-fluid" src="assets/img/lanjutkan_yuk/3.png" alt="">
-						<div class="icon">
-							<img src="assets/icon/mic.svg" alt="">
-						</div>
-					</div>
-					<div class="col">
-						<img class="img-fluid" src="assets/img/lanjutkan_yuk/4.png" alt="">
-					</div>
-					<div class="col">
-						<img class="img-fluid" src="assets/img/lanjutkan_yuk/5.png" alt="">
-					</div>
-				</div>
-			</section>
+        <section id="section-2" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header d-flex justify-content-center justify-content-md-between">
+                            <h2 class="fw-bold fs-3">Lanjutkan yuk, Febri</h2>
+                            <a class="d-none d-sm-block" href="pustakaku.html">Lihat Semua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme px-5" id="owl-carousel-3">
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/4.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/5.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid" src="assets/img/lanjutkan_yuk/4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 		</div>
 		<div class="container-fluid">
 			<div class="row pt-3 px-5">
 				<img class="img-fluid" src="assets/icon/board.svg" alt="">
 			</div>
+				<a class="d-block d-md-none my-2 text-center" href="pustakaku.html">Lihat Semua</a>
 		</div>
 		<div class="container">
 			<div id="section-3" class="mt-5">
@@ -349,7 +385,7 @@
 							maupun di mancanegara.</p>
 					</div>
 					<div class="col-lg-5">
-						<img src="assets/img/ilustrasi-1.svg" alt="">
+						<img class="img-fluid" src="assets/img/ilustrasi-1.svg" alt="">
 					</div>
 				</div>
 			</div>
@@ -461,7 +497,7 @@
 		<div id="section-6" class="mt-5">
 			<div class="container text-white">
 				<div class="row py-5">
-					<div class="col-6 pb-5 me-5">
+					<div class="col-12 col-md-6 pb-5 me-5">
 						<h2 class="h2 text-center fw-bolder">Dengarkan Cerita Menarik Setiap Hari</h2>
 						<div class="d-flex justify-content-center">
 							<img class="img" src="assets/img/buku_audio/aku_sayang_ayah.jpg" alt="">
@@ -494,7 +530,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-5 pb-5">
+					<div class="col-12 col-md-5 pb-5">
 						<a href="buku_audio.html" class="text-white">Lihat semua Buku Audio</a>
 						<h2 class="ff-kidzone fs-48px">Aku Sayang Ayah</h2>
 						<p>Namaku Nara. Aku sangat sayang ayahku. Ayah lucu, baik, dan selalu menolongku. Jika aku
@@ -513,7 +549,7 @@
 				<p class="text-center fs-4">Bagaimana kami membantu mewujudkanya?</p>
 				<div class="row mt-5">
 					<div class="col-lg-6">
-						<img src="assets/img/ilustrasi-section5a.png" alt="" class="img-fluid">
+						<img src="assets/img/ilustrasi-section5a.png" alt="" class="img-fluid p-2">
 					</div>
 					<div class="col-lg-6 d-flex align-items-center">
 						<div class="">
@@ -536,13 +572,13 @@
 								jenjang sekolahmu saat ini.</p>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<img src="assets/img/ilustrasi-section5b.png" alt="" class="img-fluid">
+					<div class="col-lg-6 order-first order-md-last">
+						<img src="assets/img/ilustrasi-section5b.png" alt="" class="img-fluid p-2">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-6">
-						<img src="assets/img/ilustrasi-section5c.png" alt="" class="img-fluid">
+						<img src="assets/img/ilustrasi-section5c.png" alt="" class="img-fluid p-2">
 					</div>
 					<div class="col-lg-6 d-flex align-items-center">
 						<div class="">
@@ -563,8 +599,8 @@
 								dan komentar yang membangun.</p>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<img src="assets/img/ilustrasi-section5d.png" alt="" class="img-fluid">
+					<div class="col-lg-6 order-first order-md-last">
+						<img src="assets/img/ilustrasi-section5d.png" alt="" class="img-fluid p-2">
 					</div>
 				</div>
 			</div>
@@ -601,7 +637,7 @@
 					<a href="info_seputar_budi.html" class="text-blue">Lihat Semua</a>
 				</div>
 				<div class="row row-cols-4 mt-4">
-					<div class="col">
+					<div class="col-12 col-md-3">
 						<a href="kenalkan_kemahiran_merujuk.html" class="text-decoration-none text-dark">
 							<div class="card card-news">
 								<img src="assets/img/news1.jpeg" class="card-img-top" alt="...">
@@ -619,7 +655,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-12 col-md-3">
 						<a href="kerjasama_peningkatan.html" class="text-decoration-none text-dark">
 							<div class="card card-news">
 								<img src="assets/img/berita/kerjasama_peningkatan_literasi.jpeg" class="card-img-top"
@@ -636,7 +672,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-12 col-md-3">
 						<a href="penghargaan_humas_indonesia.html" class="text-decoration-none text-dark">
 							<div class="card card-news">
 								<img class="img-fluid" src="assets/img/berita/penghargaan_humas_indonesia.jpg"
@@ -656,7 +692,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-12 col-md-3">
 						<a href="seminat_leksikografi_indonesia.html" class="text-decoration-none text-dark">
 							<div class="card card-news">
 								<img src="assets/img/berita/seminar_leksikografi_indonesia.png" class="card-img-top"
@@ -681,7 +717,7 @@
 					<div class="col-lg-6 bg-aqua py-5">
 						<h2 class="text-center ff-andika fw-bold">Sahabat Pilihan Budi ini</h2>
 						<div class="row mt-5">
-							<div class="col-7">
+							<div class="col-12 col-md-7 mt-2 mb-5">
 								<div class="d-flex justify-content-center align-items-center">
 									<img src="assets/icon/gold_medal.svg" alt="">
 									<h3 class="ff-andika">Medali Emas</h3>
@@ -698,7 +734,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-5">
+							<div class="col-12 col-md-5 my-2">
 								<div class="card">
 									<div class="card-body">
 										<div class="d-flex justify-content-center align-items-center mt-3">
@@ -744,99 +780,103 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 d-flex align-items-center">
-						<div class="row">
-							<div class="col-6">
-								<div class="d-flex justify-content-center align-items-center">
-									<img class="w-25" src="assets/icon/silver_medal.svg" alt="">
-									<h4 class="ff-andika fw-bold">Medali Perak</h4>
-								</div>
-								<div class="d-flex justify-content-center align-items-center mt-5 mb-5">
-									<div class="img-gold-medal-2">
-										<img class="img-fluid" src="assets/img/young.png" alt="">
-										<img class="gold-medal-2" src="assets/icon/silver_medal.svg" alt="">
+					<div class="col-12 col-lg-6">
+						<div class="d-none d-sm-block">
+							
+							<div class="row">
+								<div class="col-12 col-md-6 my-2">
+									<div class="d-flex justify-content-center align-items-center">
+										<img class="w-25" src="assets/icon/silver_medal.svg" alt="">
+										<h4 class="ff-andika fw-bold">Medali Perak</h4>
 									</div>
-									<div class="ms-2">
-										<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Hermawan
-										</h3>
-										<p class="m-0 fs-6">100 Buku Dibaca,</p>
-										<p class="m-0 fs-6">50 Buku Diunduh</p>
+									<div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+										<div class="img-gold-medal-2">
+											<img class="img-fluid" src="assets/img/young.png" alt="">
+											<img class="gold-medal-2" src="assets/icon/silver_medal.svg" alt="">
+										</div>
+										<div class="ms-2">
+											<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Hermawan
+											</h3>
+											<p class="m-0 fs-6">100 Buku Dibaca,</p>
+											<p class="m-0 fs-6">50 Buku Diunduh</p>
+										</div>
 									</div>
-								</div>
-								<div class="d-flex justify-content-center align-items-center mt-5 mb-4">
-									<div class="img-gold-medal-2">
-										<img class="img-fluid" src="assets/img/young.png" alt="">
-										<img class="gold-medal-2" src="assets/icon/silver_medal.svg" alt="">
+									<div class="d-flex justify-content-center align-items-center mt-5 mb-4">
+										<div class="img-gold-medal-2">
+											<img class="img-fluid" src="assets/img/young.png" alt="">
+											<img class="gold-medal-2" src="assets/icon/silver_medal.svg" alt="">
+										</div>
+										<div class="ms-2">
+											<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Julianti
+											</h3>
+											<p class="m-0 fs-6">80 Buku Dibaca,</p>
+											<p class="m-0 fs-6">40 Buku Diunduh</p>
+										</div>
 									</div>
-									<div class="ms-2">
-										<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Julianti
-										</h3>
-										<p class="m-0 fs-6">80 Buku Dibaca,</p>
-										<p class="m-0 fs-6">40 Buku Diunduh</p>
+									<div class="d-flex justify-content-center">
+										<div class="dash" style="width: 60%;"></div>
 									</div>
-								</div>
-								<div class="d-flex justify-content-center">
-									<div class="dash" style="width: 60%;"></div>
-								</div>
-								<div class="d-flex justify-content-center align-items-center mt-4">
-									<div class="img-gold-medal-2">
-										<img class="img-fluid" src="assets/img/young.png" alt="">
-										<img class="gold-medal-2" src="assets/icon/silver_medal.svg" alt="">
-									</div>
-									<div class="ms-2">
-										<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Riani Juliani
-										</h3>
-										<p class="m-0 fs-6">70 Buku Dibaca,</p>
-										<p class="m-0 fs-6">70 Buku Diunduh</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="d-flex justify-content-center align-items-center">
-									<img class="w-25" src="assets/icon/bronze_medal.svg" alt="">
-									<h4 class="ff-andika fw-bold">Medali Perunggu</h4>
-								</div>
-								<div class="d-flex justify-content-center align-items-center mt-5 mb-5">
-									<div class="img-gold-medal-2">
-										<img class="img-fluid" src="assets/img/young.png" alt="">
-										<img class="gold-medal-2" src="assets/icon/bronze_medal.svg" alt="">
-									</div>
-									<div class="ms-2">
-										<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Qoriah Rei
-										</h3>
-										<p class="m-0 fs-6">60 Buku Dibaca,</p>
-										<p class="m-0 fs-6">50 Buku Diunduh</p>
+									<div class="d-flex justify-content-center align-items-center mt-4">
+										<div class="img-gold-medal-2">
+											<img class="img-fluid" src="assets/img/young.png" alt="">
+											<img class="gold-medal-2" src="assets/icon/silver_medal.svg" alt="">
+										</div>
+										<div class="ms-2">
+											<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Riani Juliani
+											</h3>
+											<p class="m-0 fs-6">70 Buku Dibaca,</p>
+											<p class="m-0 fs-6">70 Buku Diunduh</p>
+										</div>
 									</div>
 								</div>
-								<div class="d-flex justify-content-center align-items-center mt-5 mb-4">
-									<div class="img-gold-medal-2">
-										<img class="img-fluid" src="assets/img/young.png" alt="">
-										<img class="gold-medal-2" src="assets/icon/bronze_medal.svg" alt="">
+								<div class="col-12 col-md-6 my-2">
+									<div class="d-flex justify-content-center align-items-center">
+										<img class="w-25" src="assets/icon/bronze_medal.svg" alt="">
+										<h4 class="ff-andika fw-bold">Medali Perunggu</h4>
 									</div>
-									<div class="ms-2">
-										<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Alvin Dior
-										</h3>
-										<p class="m-0 fs-6">50 Buku Dibaca,</p>
-										<p class="m-0 fs-6">40 Buku Diunduh</p>
+									<div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+										<div class="img-gold-medal-2">
+											<img class="img-fluid" src="assets/img/young.png" alt="">
+											<img class="gold-medal-2" src="assets/icon/bronze_medal.svg" alt="">
+										</div>
+										<div class="ms-2">
+											<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Qoriah Rei
+											</h3>
+											<p class="m-0 fs-6">60 Buku Dibaca,</p>
+											<p class="m-0 fs-6">50 Buku Diunduh</p>
+										</div>
 									</div>
-								</div>
-								<div class="d-flex justify-content-center">
-									<div class="dash" style="width: 60%;"></div>
-								</div>
-								<div class="d-flex justify-content-center align-items-center mt-4">
-									<div class="img-gold-medal-2">
-										<img class="img-fluid" src="assets/img/young.png" alt="">
-										<img class="gold-medal-2" src="assets/icon/bronze_medal.svg" alt="">
+									<div class="d-flex justify-content-center align-items-center mt-5 mb-4">
+										<div class="img-gold-medal-2">
+											<img class="img-fluid" src="assets/img/young.png" alt="">
+											<img class="gold-medal-2" src="assets/icon/bronze_medal.svg" alt="">
+										</div>
+										<div class="ms-2">
+											<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Alvin Dior
+											</h3>
+											<p class="m-0 fs-6">50 Buku Dibaca,</p>
+											<p class="m-0 fs-6">40 Buku Diunduh</p>
+										</div>
 									</div>
-									<div class="ms-2">
-										<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Hermesiani
-										</h3>
-										<p class="m-0 fs-6">40 Buku Dibaca,</p>
-										<p class="m-0 fs-6">10 Buku Diunduh</p>
+									<div class="d-flex justify-content-center">
+										<div class="dash" style="width: 60%;"></div>
+									</div>
+									<div class="d-flex justify-content-center align-items-center mt-4">
+										<div class="img-gold-medal-2">
+											<img class="img-fluid" src="assets/img/young.png" alt="">
+											<img class="gold-medal-2" src="assets/icon/bronze_medal.svg" alt="">
+										</div>
+										<div class="ms-2">
+											<h3 class="ff-andika fs-6 text-decoration-underline mb-2">Hermesiani
+											</h3>
+											<p class="m-0 fs-6">40 Buku Dibaca,</p>
+											<p class="m-0 fs-6">10 Buku Diunduh</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+                    	<button class="d-block d-sm-none text-center mx-auto btn mt-4 text-decoration-underline" onclick="(this.previousSibling.previousSibling.classList.toggle('d-none'));">Lihat Semua</button>
 					</div>
 				</div>
 			</div>
@@ -844,8 +884,10 @@
 		<section id="section-11">
 			<div class="container">
 				<div class="row">
+					<div class="col-12 order-first">
+						<h2 class="ff-bubblewump mb-4 fw-bold text-center text-md-start">Profil Penulis Bulan Ini</h2>
+					</div>
 					<div class="col-lg-6">
-						<h2 class="ff-bubblewump mb-4 fw-bold">Profil Penulis Bulan Ini</h2>
 						<h3 class="text-blue">Asma Nadia</h3>
 						<p>Asmarani Rosalba adalah nama asli Asma Nadia. Ia adalah adik kandung Helvy Tiana Rosa,
 							seorang
@@ -864,8 +906,8 @@
 							menulis</p>
 						<a href="profile_penulis.html" class="text-blue">Yuk, berkenalan lebih lanjut</a>
 					</div>
-					<div class="col-lg-6 d-flex justify-content-center">
-						<div class="img-section-11">
+					<div class="col-lg-6 d-flex justify-content-center order-first order-md-last">
+						<div class="img-section-11 mb-5 overflow-hidden">
 							<img class="thumbnail-section-11" src="assets/img/asma_nadia.jpg" alt="">
 							<img class="border-section-11" src="assets/icon/footer-border.svg" alt="">
 						</div>
@@ -877,7 +919,7 @@
 		<footer>
 			<div class="container-fluid footer">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="row">
 							<div class="col-2">
 								<img src="assets/img/logo.png" alt="" class="img-fluid">
@@ -892,7 +934,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-2">
+					<div class="col-12 col-md-2">
 						<p class="fw-bold fs-5 text-dark">Produk</p>
 						<a href="" class="d-block text-decoration-none mb-3">Buku Digital</a>
 						<a href="" class="d-block text-decoration-none mb-3">Buku Komik</a>
@@ -900,13 +942,13 @@
 						<a href="" class="d-block text-decoration-none mb-3">Buku Video</a>
 						<a href="" class="d-block text-decoration-none mb-3">Referensi</a>
 					</div>
-					<div class="col-2">
+					<div class="col-12 col-md-2">
 						<p class="fw-bold fs-5 text-dark">Panduan</p>
 						<a href="" class="d-block text-decoration-none mb-3">Tentang Budi</a>
 						<a href="" class="d-block text-decoration-none mb-3">Kebijakan</a>
 						<a href="" class="d-block text-decoration-none mb-3">Kontak Kami</a>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<p class="fw-bold fs-5 text-dark">Kontak Kami</p>
 						<p class="p-0"><img src="assets/icon/evelope.svg" alt=""> badan.bahasa@kemdikbud.go.id</p>
 						<p><img src="assets/icon/telephone.svg" alt=""> (021) 4750406</p>
@@ -915,10 +957,10 @@
 					</div>
 				</div>
 				<div class="row sosmed-icon">
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="row">
-							<div class="col-2"></div>
-							<div class="col-10">
+							<div class="col-12 col-md-2"></div>
+							<div class="col-12 col-md-10">
 								<img src="assets/icon/instagram.svg" alt="">
 								<img src="assets/icon/facebook.svg" alt="">
 								<img src="assets/icon/twitter.svg" alt="">
@@ -927,19 +969,23 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-8">
-						<p class="text-end">Jam Operasional : (Senin - Kamis : 09.00 - 17.00 WIB, Jumat : 09.00 - 16.00
+					<div class="col-12 col-md-8">
+						<p class="text-md-end">Jam Operasional : (Senin - Kamis : 09.00 - 17.00 WIB, Jumat : 09.00 - 16.00
 							WIB)</p>
 					</div>
 				</div>
 				<div class="dash"></div>
 				<div class="copyright py-4 px-5 text-dark">
-					<div class="d-flex justify-content-between align-items-center">
-						<div>
-							Copyright &copy 2022
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="text-center text-md-start">
+								Copyright &copy 2022
+							</div>
 						</div>
-						<div>
-							All right reserved
+						<div class="col-12 col-md-6">
+							<div class="text-center text-md-end">
+								All right reserved
+							</div>
 						</div>
 					</div>
 				</div>
