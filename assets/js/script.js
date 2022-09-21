@@ -58,44 +58,38 @@ $("#pagin ul a").click(function (e) {
 
 showPage(0);
 
-$(function () {
-    var bookOptions = {
-        height: 500
-        , width: 800
-        , maxHeight: 600
-        , centeredWhenClosed: true
-        , hardcovers: true
-        , pageNumbers: false
-        , toolbar: "lastLeft, left, right, lastRight, toc, zoomin, zoomout, slideshow, flipsound, fullscreen, thumbnails, download"
-        , thumbnailsPosition: 'left'
-        , responsiveHandleWidth: 50
-        , lightbox: "#show_book"
-        , lightboxColor: "#eee"
-        , toolbarPosition: "bottom"
-        , pdf: "assets/img/buku_pdf/alia_juga_berani.pdf"
+// let a = window.location.href;
+// let query = a;
+// console.log(query);
 
-    };
+// data = {
+//     'asdfsadf': {
+//         'id': 'd'
+//     }
+// };
 
-    $('#book').wowBook(bookOptions);
-});
+// console.log(data);
 
-$(function () {
-    var bookOptions2 = {
-        height: 500
-        , width: 800
-        , maxHeight: 600
-        , centeredWhenClosed: true
-        , hardcovers: true
-        , pageNumbers: false
-        , toolbar: "lastLeft, left, right, lastRight, toc, zoomin, zoomout, slideshow, flipsound, fullscreen, thumbnails, download"
-        , thumbnailsPosition: 'left'
-        , responsiveHandleWidth: 50
-        , lightbox: "#show_si_saloi"
-        , lightboxColor: "#eee"
-        , toolbarPosition: "bottom"
-        , pdf: "assets/img/buku_pdf/si_saloi.pdf"
+$(document).ready(function () {
+    var book = $("#show_book").data('book');
+    $(function () {
+        var bookOptions = {
+            height: 500,
+            width: 800,
+            maxHeight: 600,
+            centeredWhenClosed: true,
+            hardcovers: true,
+            pageNumbers: false,
+            toolbar: "lastLeft, left, right, lastRight, toc, zoomin, zoomout, slideshow, flipsound, fullscreen, thumbnails, download",
+            thumbnailsPosition: 'left',
+            responsiveHandleWidth: 50,
+            lightbox: "#show_book",
+            lightboxColor: "#eee",
+            toolbarPosition: "bottom",
+            pdf: book
 
-    };
+        };
 
-    $('#book_si_saloi').wowBook(bookOptions2);
+        $('#book').wowBook(bookOptions);
+    });
 });

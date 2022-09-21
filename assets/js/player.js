@@ -1,9 +1,8 @@
+var src = $(".audio-player").data('audio');
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-    "assets/img/audio.mp3"
+    src
 );
-//credit for song: Adrian kreativaweb@gmail.com
-
 console.dir(audio);
 
 audio.addEventListener(
