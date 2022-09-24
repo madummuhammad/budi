@@ -486,15 +486,31 @@ body.registrasi {
 
 .login {
   position: relative;
-  right: 100px;
-  top: 100px;
+  right: 0;
+  top: 0;
 }
+
 .login .card-login {
   border-radius: 20px;
   border: none;
   box-shadow: 2px 8px 30px rgba(79, 76, 74, 0.2);
-  width: 120%;
+  width: 100%;
 }
+
+@media only screen and (min-width: 768px) {
+
+  .login {
+    position: relative;
+    right: 100px;
+    top: 100px;
+  }
+
+
+  .login .card-login {
+    width: 120%;
+  }
+}
+
 .login .card-login .logo {
   width: 68px;
 }
